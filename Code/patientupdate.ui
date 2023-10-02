@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PatientUpdate</class>
+ <widget class="QDialog" name="PatientUpdate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>839</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DrStrange v.1.0</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="8" column="1">
+             <widget class="QLineEdit" name="patientUpdateCity"/>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLineEdit" name="patientUpdateDOB"/>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLineEdit" name="patientUpdateHomePhone"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Last Name</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QTextEdit" name="patientUpdateAllergyHistory"/>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>Email</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLineEdit" name="patientUpdateSSN"/>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>Allergy History</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>DOB</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QLineEdit" name="patientUpdateAddressLine1"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>First Name</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>Addres 2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Lab History</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Middle Name</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="QLineEdit" name="patientUpdateWorkPhone"/>
+            </item>
+            <item row="5" column="2">
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>Work Phone</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="patientUpdateLastNameText"/>
+            </item>
+            <item row="9" column="1">
+             <widget class="QLineEdit" name="patientUpdateZip"/>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Zip Code</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="QTextEdit" name="patientUpdateLabHistory"/>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>State</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="patientUpdateFirstNameText"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="patientUpdatePatientID">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QLineEdit" name="patientUpdateMiddleNameText"/>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>City</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLineEdit" name="patientUpdateMobile"/>
+            </item>
+            <item row="12" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>Diagnostics</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="3">
+             <widget class="QLineEdit" name="patientUpdateAddressLine2"/>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Home Phone</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="3">
+             <widget class="QLineEdit" name="patientUpdateState"/>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Address 1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>SSN#</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QLineEdit" name="patientUpdateEmail"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>PatientID</string>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="1">
+             <widget class="QTextEdit" name="patientUpdateDiagnostics"/>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Mobile Phone</string>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="0">
+             <widget class="QPushButton" name="updatePatientUpdateButton">
+              <property name="text">
+               <string>Update</string>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="1">
+             <widget class="QLabel" name="updatePatientStatusLabel">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="13" column="3">
+             <widget class="QPushButton" name="pushButton">
+              <property name="text">
+               <string>Create Appointment</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>Doctor ID</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLabel" name="patientUpdateDoctorIDLabel">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>patientUpdateFirstNameText</tabstop>
+  <tabstop>patientUpdateMiddleNameText</tabstop>
+  <tabstop>patientUpdateLastNameText</tabstop>
+  <tabstop>patientUpdateDOB</tabstop>
+  <tabstop>patientUpdateSSN</tabstop>
+  <tabstop>patientUpdateEmail</tabstop>
+  <tabstop>patientUpdateMobile</tabstop>
+  <tabstop>patientUpdateWorkPhone</tabstop>
+  <tabstop>patientUpdateHomePhone</tabstop>
+  <tabstop>patientUpdateAddressLine1</tabstop>
+  <tabstop>patientUpdateAddressLine2</tabstop>
+  <tabstop>patientUpdateCity</tabstop>
+  <tabstop>patientUpdateState</tabstop>
+  <tabstop>patientUpdateZip</tabstop>
+  <tabstop>patientUpdateAllergyHistory</tabstop>
+  <tabstop>patientUpdateLabHistory</tabstop>
+  <tabstop>patientUpdateDiagnostics</tabstop>
+  <tabstop>updatePatientUpdateButton</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
