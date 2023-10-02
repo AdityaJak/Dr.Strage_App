@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>appicon.ico</file>
+        <file>logo.png</file>
+        <file>logo1.png</file>
+        <file>loginBackground.png</file>
+        <file>loginBackground2.png</file>
+    </qresource>
+</RCC>

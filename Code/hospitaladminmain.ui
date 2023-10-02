@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hospitalAdminMain</class>
+ <widget class="QMainWindow" name="hospitalAdminMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1074</width>
+    <height>784</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DrStrange v.1.0</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#addAdminsMyHospitalNameLabel{
+background:rgba(0,0,0,0.5);
+border-radius: 15px;
+}
+
+#addAdminsMyHospitalIDLabel{
+background:rgba(0,0,0,0.5);
+border-radius: 15px;
+}
+
+#addDoctorMyHospitalNameLabel{
+background:rgba(0,0,0,0.5);
+border-radius: 15px;
+}
+
+#addDoctorMyHospitalIDLabel{
+background:rgba(0,0,0,0.5);
+border-radius: 15px;
+}
+
+#addDoctorStatusLabel2{
+background:rgba(0,0,0,0.5);
+border-radius: 15px;
+}
+
+#addDoctorStatusLabel1{
+background:rgba(0,0,0,0.5);
+border-radius: 15px;
+}
+
+#frame_20{
+background:rgba(112, 127, 158,0.6);
+color: white;
+}
+
+#frame_22{
+border: 2px solid gray;
+border-radius: 10px;
+}
+
+#frame_23{
+border: 2px solid gray;
+border-radius: 10px;
+}
+
+#frame_24{
+border: 2px solid gray;
+border-radius: 10px;
+}
+
+#frame_25{
+border: 2px solid gray;
+border-radius: 10px;
+}
+
+#frame_5{
+border: 1px solid gray;
+border-radius: 10px;
+}
+
+#frame_11{
+border: 1px solid gray;
+border-radius: 10px;
+}
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidgetHospitalAdmin">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QFrame" name="frame_20">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_20">
+       <item>
+        <widget class="QFrame" name="frame_21">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,2,2,8">
+          <item>
+           <widget class="QFrame" name="frame_22">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>User Name</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Hospital ID</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="hospitalAdminHospitalID">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="hospitalAdminUserNameLabel">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_23">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_24">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_21">
+             <item>
+              <widget class="QPushButton" name="logoutButton">
+               <property name="text">
+                <string>Logout</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>733</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_25">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="managemyHospital">
+             <attribute name="title">
+              <string>Manage My Hospital</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QTabWidget" name="managedHospitalsChildTab_2">
+                <property name="currentIndex">
+                 <number>2</number>
+                </property>
+                <widget class="QWidget" name="viewAdmins">
+                 <attribute name="title">
+                  <string>View Admins</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout">
+                  <item>
+                   <widget class="QFrame" name="frame_2">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                     <item>
+                      <widget class="QFrame" name="frame">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout">
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="viewHospitalIDLabel_2">
+                          <property name="text">
+                           <string>Last Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="0">
+                         <widget class="QLabel" name="viewHospitalIDLabel_4">
+                          <property name="text">
+                           <string>E-Mail</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QPushButton" name="viewAdminsSearchButton">
+                          <property name="text">
+                           <string>Search</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLineEdit" name="viewAdminsNameSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="1">
+                         <widget class="QLineEdit" name="viewAdminsEmailSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="QLabel" name="viewHospitalIDLabel_3">
+                          <property name="text">
+                           <string>User ID</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="viewHospitalNameLabel_2">
+                          <property name="text">
+                           <string>First Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="1">
+                         <widget class="QLineEdit" name="viewAdminsUserIdSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QLineEdit" name="viewAdminsLastNameSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QPushButton" name="viewAdminsLoadAllButton">
+                          <property name="text">
+                           <string>Load All</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_3">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                     <item>
+                      <widget class="QTableView" name="HospitalQueryTable_2"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="addHospitalAdmin_2">
+                 <attribute name="title">
+                  <string>Add Hospital Admin</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <item>
+                   <widget class="QFrame" name="frame_4">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <item>
+                      <widget class="QFrame" name="frame_5">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,3,8">
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="addHospitalAdminIDLabel_2">
+                          <property name="text">
+                           <string>My Hospital ID</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLabel" name="addAdminsMyHospitalNameLabel">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="addHospitalAdminNameLabel_2">
+                          <property name="text">
+                           <string>My Hospital Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QLabel" name="addAdminsMyHospitalIDLabel">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <spacer name="horizontalSpacer_2">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_6">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_3">
+                        <item row="2" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminLastName_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminEmail_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminUserID_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_13">
+                          <property name="text">
+                           <string>Mobile Phone</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_14">
+                          <property name="text">
+                           <string>E-Mail:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="0">
+                         <widget class="QLabel" name="DOB2_7">
+                          <property name="text">
+                           <string>Temp Password</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="0">
+                         <widget class="QLabel" name="DOB2_6">
+                          <property name="text">
+                           <string>User ID</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_11">
+                          <property name="text">
+                           <string>Office Phone</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminOfficePhone_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminMobilePhone_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminTempPassword_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_12">
+                          <property name="text">
+                           <string>Last Name:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminFirstName_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="FirstNameLabel2_10">
+                          <property name="text">
+                           <string>Middle Name:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminMiddleName_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="FirstNameLabel2_9">
+                          <property name="text">
+                           <string>First Name:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="0">
+                         <widget class="QPushButton" name="addHospitalAdminAddButton_2">
+                          <property name="text">
+                           <string>Add</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="1">
+                         <widget class="QLabel" name="addHospitalAdminAddResult_2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_7">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                     <item>
+                      <spacer name="verticalSpacer">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>218</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="viewDoctorsTab">
+                 <attribute name="title">
+                  <string>View Doctors</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <item>
+                   <widget class="QFrame" name="frame_10">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_10">
+                     <item>
+                      <widget class="QFrame" name="frame_8">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_4">
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="viewHospitalIDLabel_6">
+                          <property name="text">
+                           <string>E-Mail</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="viewHospitalIDLabel_5">
+                          <property name="text">
+                           <string>Doctor ID</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLineEdit" name="viewDoctorsNameSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="viewHospitalIDLabel_7">
+                          <property name="text">
+                           <string>Last Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="viewHospitalNameLabel_3">
+                          <property name="text">
+                           <string>First Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QLineEdit" name="viewDoctorsLastNameSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QPushButton" name="viewDoctorsSearchButton">
+                          <property name="text">
+                           <string>Search</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QLineEdit" name="viewDoctorsUserIdSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QLineEdit" name="viewDoctorsEmailSearchField">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QPushButton" name="viewDoctorsLoadAllButton">
+                          <property name="text">
+                           <string>Load All</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_9">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_9">
+                        <item>
+                         <widget class="QTableView" name="HospitalQueryTable_3"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="addDoctorTab">
+                 <attribute name="title">
+                  <string>Add Doctor</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QFrame" name="frame_13">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_12" stretch="0,0,0">
+                     <item>
+                      <widget class="QFrame" name="frame_11">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,3,8">
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="addHospitalAdminIDLabel_3">
+                          <property name="text">
+                           <string>My Hospital ID</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="addHospitalAdminNameLabel_3">
+                          <property name="text">
+                           <string>My Hospital Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLabel" name="addDoctorMyHospitalNameLabel">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QLabel" name="addDoctorMyHospitalIDLabel">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <spacer name="horizontalSpacer_3">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_12">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_6">
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="FirstNameLabel2_16">
+                          <property name="text">
+                           <string>First Name:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="1">
+                         <widget class="QLineEdit" name="addDoctorCity">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="3">
+                         <widget class="QLineEdit" name="addDoctorLanguage">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="2">
+                         <widget class="QLabel" name="LastNameLabel2_24">
+                          <property name="text">
+                           <string>State</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QLabel" name="LastNameLabel2_19">
+                          <property name="text">
+                           <string>E-Mail:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLineEdit" name="addDoctorFirstName">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QLineEdit" name="addDoctorMiddleName">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="QLabel" name="LastNameLabel2_22">
+                          <property name="text">
+                           <string>Language</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QLineEdit" name="addDoctorProviderID">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="FirstNameLabel2_15">
+                          <property name="text">
+                           <string>Middle Name:</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_25">
+                          <property name="text">
+                           <string>Zip Code</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QLineEdit" name="addDoctorLastName">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QLineEdit" name="addDoctorMobile">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="1">
+                         <widget class="QLabel" name="addDoctorStatusLabel2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="2">
+                         <widget class="QLabel" name="DOB2_9">
+                          <property name="text">
+                           <string>Temp Password</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="1">
+                         <widget class="QLineEdit" name="addDoctorAddress1">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="QLineEdit" name="addDoctorEmail">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_21">
+                          <property name="text">
+                           <string>Provider Id</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="2">
+                         <widget class="QLabel" name="FirstNameLabel2_18">
+                          <property name="text">
+                           <string>Address 2</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="3">
+                         <widget class="QLineEdit" name="addDoctorAddress2">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="3">
+                         <widget class="QLineEdit" name="addDoctorState">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="0">
+                         <widget class="QLabel" name="DOB2_10">
+                          <property name="text">
+                           <string>User ID</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="0">
+                         <widget class="QPushButton" name="addHospitalAdminAddButton_3">
+                          <property name="text">
+                           <string>Add</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="3">
+                         <widget class="QLineEdit" name="addDoctorOfficePhone">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="3">
+                         <widget class="QLineEdit" name="addHospitalAdminTempPassword_3">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="1">
+                         <widget class="QLineEdit" name="addHospitalAdminUserID_3">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="QLabel" name="LastNameLabel2_18">
+                          <property name="text">
+                           <string>Office Phone</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="QLabel" name="FirstNameLabel2_17">
+                          <property name="text">
+                           <string>Address 1</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_23">
+                          <property name="text">
+                           <string>City</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="1">
+                         <widget class="QLineEdit" name="addDoctorZIP">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_17">
+                          <property name="text">
+                           <string>Mobile Phone</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="LastNameLabel2_20">
+                          <property name="text">
+                           <string>Last Name:</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_14">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <item>
+                         <spacer name="verticalSpacer_2">
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>218</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="SearchPatientTab_2">
+             <attribute name="title">
+              <string>SearchPatient</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <widget class="QFrame" name="frame_17">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QFrame" name="frame_15">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="FirstNameLabel_2">
+                      <property name="text">
+                       <string>First Name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="SSNLabel_2">
+                      <property name="text">
+                       <string>SSN Last 4 #</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="DOBLabel_2">
+                      <property name="text">
+                       <string>Date of Birth</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="DOBLine_2"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="LastNameLabel_2">
+                      <property name="text">
+                       <string>Last Name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="LastNameLine_2"/>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="SSNLine_2"/>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="FirstNameLine_2"/>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QPushButton" name="SearchButton_2">
+                      <property name="text">
+                       <string>Search</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLabel" name="searchResultLabelHospitalAdmin">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_16">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_15">
+                    <item>
+                     <widget class="QTableView" name="PatientQueryTable_2"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="searchResultLabel_2">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="AddPatientTab_2">
+             <attribute name="title">
+              <string>AddPatient</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_19">
+              <item>
+               <widget class="QFrame" name="frame_18">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <item row="2" column="2">
+                  <widget class="QLabel" name="EmailAddress_4">
+                   <property name="text">
+                    <string>Email Address</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QLabel" name="State_2">
+                   <property name="text">
+                    <string>State</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="Address1_2">
+                   <property name="text">
+                    <string>Address 1</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QLabel" name="FirstNameLabel2_12">
+                   <property name="text">
+                    <string>Allergy History</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QTextEdit" name="textEdit_4"/>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="MobilePhone_4">
+                   <property name="text">
+                    <string>Mobile Phone</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="3">
+                  <widget class="QLineEdit" name="addPatientAddressLine2_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="addPatientLastName_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QLabel" name="Address2_2">
+                   <property name="text">
+                    <string>Address 2</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLineEdit" name="addPatientMiddleName_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QLabel" name="WorkPhone_2">
+                   <property name="text">
+                    <string>Work Phone</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="FirstNameLabel2_11">
+                   <property name="text">
+                    <string>First Name</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLabel" name="DOB2_8">
+                   <property name="text">
+                    <string>DOB</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="addPatientMobile_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QLabel" name="ZipCode_2">
+                   <property name="text">
+                    <string>Zip Code</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="3">
+                  <widget class="QLineEdit" name="addPatientWorkPhone_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="QLineEdit" name="addPatientDOB_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="addPatientName_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="City_2">
+                   <property name="text">
+                    <string>City</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="HomePhone_2">
+                   <property name="text">
+                    <string>Home Phone</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QLabel" name="FirstNameLabel2_14">
+                   <property name="text">
+                    <string>Diagonistics</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="LastNameLabel2_15">
+                   <property name="text">
+                    <string>Last Name</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLineEdit" name="addPatientHomePhone_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QLabel" name="LastNameLabel2_16">
+                   <property name="text">
+                    <string>Middle Name</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QLineEdit" name="addPatientEmail_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QLineEdit" name="addPatientZip_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="1">
+                  <widget class="QTextEdit" name="textEdit_5"/>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QLineEdit" name="addPatientCity_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="3">
+                  <widget class="QLineEdit" name="addPatientState_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QLineEdit" name="addPatientAddressLine1_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="SSN2_4">
+                   <property name="text">
+                    <string>SSN#</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="addPatientSSN_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="QLabel" name="FirstNameLabel2_13">
+                   <property name="text">
+                    <string>Lab History</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="1">
+                  <widget class="QTextEdit" name="textEdit_6"/>
+                 </item>
+                 <item row="11" column="0">
+                  <widget class="QPushButton" name="addPatientSaveButton_2">
+                   <property name="text">
+                    <string>Save</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="1">
+                  <widget class="QLabel" name="addResultsLabelHospitalAdmin">
+                   <property name="text">
+                    <string>TextLabel</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_19">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <item>
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="addPatientResultLabel_2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1074</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>viewAdminsNameSearchField</tabstop>
+  <tabstop>viewAdminsLastNameSearchField</tabstop>
+  <tabstop>viewAdminsUserIdSearchField</tabstop>
+  <tabstop>viewAdminsEmailSearchField</tabstop>
+  <tabstop>viewAdminsSearchButton</tabstop>
+  <tabstop>viewAdminsLoadAllButton</tabstop>
+  <tabstop>addHospitalAdminFirstName_2</tabstop>
+  <tabstop>addHospitalAdminMiddleName_2</tabstop>
+  <tabstop>addHospitalAdminLastName_2</tabstop>
+  <tabstop>addHospitalAdminEmail_2</tabstop>
+  <tabstop>addHospitalAdminOfficePhone_2</tabstop>
+  <tabstop>addHospitalAdminMobilePhone_2</tabstop>
+  <tabstop>addHospitalAdminUserID_2</tabstop>
+  <tabstop>addHospitalAdminTempPassword_2</tabstop>
+  <tabstop>addHospitalAdminAddButton_2</tabstop>
+  <tabstop>viewDoctorsNameSearchField</tabstop>
+  <tabstop>viewDoctorsLastNameSearchField</tabstop>
+  <tabstop>viewDoctorsUserIdSearchField</tabstop>
+  <tabstop>viewDoctorsEmailSearchField</tabstop>
+  <tabstop>viewDoctorsSearchButton</tabstop>
+  <tabstop>viewDoctorsLoadAllButton</tabstop>
+  <tabstop>addDoctorFirstName</tabstop>
+  <tabstop>addDoctorMiddleName</tabstop>
+  <tabstop>addDoctorLastName</tabstop>
+  <tabstop>addDoctorEmail</tabstop>
+  <tabstop>addDoctorProviderID</tabstop>
+  <tabstop>addDoctorLanguage</tabstop>
+  <tabstop>addDoctorMobile</tabstop>
+  <tabstop>addDoctorOfficePhone</tabstop>
+  <tabstop>addDoctorAddress1</tabstop>
+  <tabstop>addDoctorAddress2</tabstop>
+  <tabstop>addDoctorCity</tabstop>
+  <tabstop>addDoctorState</tabstop>
+  <tabstop>addDoctorZIP</tabstop>
+  <tabstop>addHospitalAdminUserID_3</tabstop>
+  <tabstop>addHospitalAdminTempPassword_3</tabstop>
+  <tabstop>addHospitalAdminAddButton_3</tabstop>
+  <tabstop>FirstNameLine_2</tabstop>
+  <tabstop>LastNameLine_2</tabstop>
+  <tabstop>SSNLine_2</tabstop>
+  <tabstop>DOBLine_2</tabstop>
+  <tabstop>SearchButton_2</tabstop>
+  <tabstop>addPatientName_2</tabstop>
+  <tabstop>addPatientMiddleName_2</tabstop>
+  <tabstop>addPatientLastName_2</tabstop>
+  <tabstop>addPatientDOB_2</tabstop>
+  <tabstop>addPatientSSN_2</tabstop>
+  <tabstop>addPatientEmail_2</tabstop>
+  <tabstop>addPatientMobile_2</tabstop>
+  <tabstop>addPatientWorkPhone_2</tabstop>
+  <tabstop>addPatientHomePhone_2</tabstop>
+  <tabstop>addPatientAddressLine1_2</tabstop>
+  <tabstop>addPatientAddressLine2_2</tabstop>
+  <tabstop>addPatientCity_2</tabstop>
+  <tabstop>addPatientState_2</tabstop>
+  <tabstop>addPatientZip_2</tabstop>
+  <tabstop>textEdit_4</tabstop>
+  <tabstop>textEdit_5</tabstop>
+  <tabstop>textEdit_6</tabstop>
+  <tabstop>addPatientSaveButton_2</tabstop>
+  <tabstop>HospitalQueryTable_3</tabstop>
+  <tabstop>HospitalQueryTable_2</tabstop>
+  <tabstop>logoutButton</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>managedHospitalsChildTab_2</tabstop>
+  <tabstop>PatientQueryTable_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

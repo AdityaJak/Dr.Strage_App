@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>DrStrange v.1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/logo1.png</normalon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+font-family:century gothic;
+font-size:15px;
+
+}
+
+#MainWindow{
+
+}
+
+#centralwidget{
+background: url(:/loginBackground2.png)
+}
+
+
+#loginFrame{
+background:rgba(0,0,0,0.5);
+border-radius: 15px;
+}
+
+#loginFrame2{
+background:#red;
+
+}
+
+
+#userNameLabel{
+border: 2px solid gray;
+border-radius: 10px;
+background:rgba(0,0,0,0.6);
+color: white;
+}
+
+#passwordLabel{
+border: 2px solid gray;
+border-radius: 10px;
+background:rgba(0,0,0,0.6);
+color: white;
+}
+
+#userIDText{
+border: 2px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+background:transparent;
+color: white;
+}
+
+#passwordText{
+border: 2px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+background:transparent;
+color: white;
+}
+
+#loginButton{
+background:rgba(93,127,168,0.8);
+border-radius:6px;
+}
+
+#loginToolButton{
+background:gray;
+border-radius:6px;
+}
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="loginFrame">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>530</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>530</width>
+      <height>400</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>century gothic</family>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="userNameLabel">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>75</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>USERNAME</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="userIDText">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>110</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="passwordLabel">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PASSWORD</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="passwordText">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>190</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginButton">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>230</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Log in</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>350</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>Need Assistance?</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="loginToolButton">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>10</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Resources/Resources.qrc">
+       <normaloff>:/logo1.png</normaloff>:/logo1.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>64</width>
+       <height>64</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>730</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>userIDText</tabstop>
+  <tabstop>passwordText</tabstop>
+  <tabstop>loginButton</tabstop>
+  <tabstop>loginToolButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
