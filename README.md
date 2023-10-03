@@ -75,7 +75,7 @@ Note: There is known bug about application crashing. If application crashes with
 
 ## Team Members
 -  Adithya Jakkaraju - Team Leader
--  Junyang Zhang(github: LukaDoncic7777777) - Requirement Leader
+-  Junyang Zhang - Requirement Leader
 -  Huiyu Yi - QA leader
 -  Erhan Ozturk - Design & Implementation leader
 -  Qikun Xu - Git & Configuration Leader
